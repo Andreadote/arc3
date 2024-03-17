@@ -24,7 +24,7 @@ jobs:
           
       - name: npm install dependencies
         run: npm install
-
+# this trivy file scan your package.json file for any vunarebility and checks your lastest version 
       - name: Trivy file scan
         run: trivy fs . > trivyfs.txt
 
